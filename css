@@ -1,0 +1,306 @@
+html{
+	font-size: 100px;
+}
+body{
+	background: #f6f6f6;
+}
+/*header*/
+header{
+	width: 100%;
+	height: .5rem;
+	line-height: .5rem;
+	background: #E1673E;
+	padding: 0 .1rem;
+	color: #222222;
+	box-sizing: border-box;
+}
+/*nav*/
+nav{
+	width: 100%;
+	overflow: hidden;
+	overflow-x: scroll;
+}
+nav::-webkit-scrollbar{/*隐藏导航条*/
+	display: none;
+}
+.nav-list{
+	font-size: 0;
+	height: .5rem;
+	word-spacing: normal;/*强制不换行*/
+}
+.nav-list .nav-link{
+	display: inline-block;
+	text-align:center;
+	font-size: .2rem;
+	width:16.6% ;
+	height: .4rem;
+	line-height: .45rem;
+	color: #555555;
+	border-bottom: 3px solid #FFFFFF;	
+}
+.nav-list .nav-link.active{
+	border-bottom: 3px solid #f54343;
+	color: #f54343;
+}
+/*swiper*/
+.swiper-wrapper{
+	position: relative;
+	width: 100%;
+	height: 2.8rem;
+}
+.swiper-slide img{
+	display: block;
+	width: 100%;
+}
+.swiper-slide .bg{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 1;
+	width: 100%;
+	height: .6rem;
+	background: rgba(0,0,0,.56);
+}
+.swiper-slide .swiper-text{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: .6rem;
+	line-height: .6rem;
+	font-size: .16rem;
+	z-index: 2;
+	color: #FFFFFF;
+	padding-right: 10px;
+	padding-left: 10px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+.swiper-text em{
+	font-style: normal;
+	background: #f54343;
+	padding:.1rem;
+	margin-right:10px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+/*频道模块*/
+
+.channelBox li{
+    width: 50%;
+    float: left;
+    border-right: .04rem solid #f6f6f6;
+    padding: .21rem 0 .16rem ;
+    background: #fff;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    /*把边框都算在总宽度内*/
+}
+.channelBox li:last-child{
+    border: 0;
+}
+.channelBox li img{
+    display: block;
+    width: 1.31rem;
+    height: .81rem;
+    margin: 0 auto;
+}
+/*新闻实讯*/
+.news-list{
+	width: 100%;
+	overflow: hidden;
+	background: #FFFFFF;
+}
+.titleBox{
+	height: .5rem;
+	line-height: .5rem;
+	padding-left: 10px;
+}
+.titleBox a{
+	color: #666666;
+	font-size: .1rem;
+	float: right;
+	margin-right: 5px;
+}
+.news-list .item{
+	padding: 8px;
+	overflow: hidden;
+	border: 1px solid #f6f6f6;
+}
+.item:last-child{
+	border:0;
+}
+.item .news-img img{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.item .news-img{
+	float: left;
+	width: 42%;
+	height: 1rem;
+}
+.item .news-text{
+	position: relative;
+	float: right;
+	width: 55%;
+	height: 1rem;
+}
+.news-text .news-titles,.js-item .js-title{
+	font-size: .16rem;
+	height: .7rem;
+	line-height: .3rem;
+	overflow: hidden;
+}
+.news-text .news-titles a,.js-item .js-title a{
+	color: #363636;
+}
+.bews-des .news-i{
+	position:absolute;
+	left: 0;
+	bottom: 0;
+	width: 80%;
+	font-size: .14rem;
+	color: #a6a6a6;
+	overflow: hidden;
+}
+.bews-des .news-m{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	font-size: .1rem;
+	padding: 0 5px;
+	color: #f54343;
+	border: 1px solid #f54343;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+/*多张图片轮播效果*/
+.swiper-many{
+	overflow: hidden;
+}
+.swiperwappes{
+	height: 1rem;
+}
+.swiper-pageins{
+	position: relative;
+}
+/*新闻天下*/
+.js-list{
+	width: 100%;
+	min-height: 3rem;
+	overflow: hidden;
+}
+.js-list .js-item{
+	position: relative;
+	float: left;
+	width: 45%;
+	padding:8px;
+	overflow: hidden;
+}
+.js-item .js-img{
+	width: 100%;
+	height: 1rem;
+	overflow: hidden;
+}
+.js-item .js-img img{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.js-item .js-title{
+	height: .6rem;
+	line-height: .25rem;
+	overflow: hidden;
+}
+.hs-des{
+	font-size: .1rem;
+	color: #a6a6a6;
+}
+.hs-des .js-time{
+	float: left;
+	margin-right: .4rem;
+}
+.js-thumb em{
+	display: inline-block;
+	width: .2rem;
+	height: .2rem;
+	margin-right:3px;
+	vertical-align: -3px;
+}
+.js-time em{
+	background: url(../img/pull_fresh.png) no-repeat;
+	background-size: cover;
+	-webkit-background-size:cover;
+}
+.js-num{
+	float: left;
+}
+.js-num em{
+	background: url(../sa.png) no-repeat;
+	background-size:cover ;
+	-webkit-background-size: cover;
+}
+/*底部*/
+.clear{
+	width: 100%;
+	height: 1rem;
+}
+/*footer*/
+footer{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: .8rem;
+	border: 2px solid #c3c3c3;
+	z-index: 99;
+	background: #FFFFFF;
+}
+footer ul li{
+	float: left;
+	width: 20%;
+	text-align: center;
+	font-size: .2rem;
+}
+footer li span{
+	display: block;
+	width: .43rem;
+	height: .42rem;
+	background: url(../img/slider/sprites.png) no-repeat;
+	background-size: 2.15rem .84rem;
+	margin: .04rem auto .06rem;
+}
+footer li span .icon-home{
+	background-position: 0,0;
+}
+footer li .cur{
+	color: #f54343;
+}
+footer li .cur span.icon-home{
+	background-position: 0 -.42rem;
+}
+footer li span .icon-live{
+	background-position: -.43rem 0;
+}
+footer li.cur span.icon-live{
+	background-position: -.43rem -.42rem;
+}}
+footer li span.icon-column{
+    background-position: -.86rem 0;
+}
+footer li.cur span.icon-column{
+    background-position: -.86rem -.42rem;
+}
+footer li span.icon-doc{
+    background-position: -1.29rem 0;
+}
+footer li.cur span.icon-doc{
+    background-position: -1.29rem -.42rem;
+}
+footer li span.icon-user{
+    background-position: -1.73rem 0;
+}
+footer li.cur span.icon-user{
+    background-position: -1.73rem -.42rem;
+}
